@@ -1,0 +1,794 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+button {
+    cursor: pointer;
+}
+
+:root {
+    --hulu-green : #21C171;
+    --hulu-black : #0B0C0F;
+}
+
+@font-face {
+    font-family: hulu-font;
+    src: url(Resources/fonts/GraphikBlack.otf);
+
+    font-family: hulu-medium;
+    src: url(Resources/fonts/GraphikMedium.otf);
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    width: 100vw;
+    height: 699px;
+    background-image: url(https://cnbl-cdn.bamgrid.com/assets/62ed936344e6ffbac48c896b2bd327fe171521dd941b6ddc8402e2eae50116fc/original);
+    background-size: cover;
+}
+
+nav {
+    width: 95%;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav p {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 150;
+    font-family: hulu-font, sans-serif;
+    color: white;
+}
+
+.logo {
+    width: 90px;
+    height: 60px;
+    background-size: cover;
+}
+
+.hero {
+    width: 100vw;
+    height: calc(699px - 80px);
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-bundle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bundlecard {
+    width: 350px;
+    height: 350px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bundle1 {
+    margin-right: 30px;
+}
+
+.bundle1-img {
+    width: 95%;
+    height: 70px;
+
+}
+
+#header-btn {
+    background-color: #21C171;
+    padding: 15px 90px;
+    color: black;
+    font-family: hulu-medium;
+    border: none;
+    border-radius: 4px;
+}
+
+.bundlecard p {
+    font-family: hulu-medium;
+    font-size: 15px;
+    color: var(--hulu-green);
+
+}
+
+.bundlecard h4 {
+    font-family: hulu-medium;
+    color: white;
+    font-size: 20px;
+}
+
+.hero-signup {
+    width: 350px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-signup :nth-child(1){
+    font-size: 12px;
+    color: white;
+    font-family: hulu-medium;
+}
+
+.hero-signup :nth-child(2) {
+    font-size: 20px;
+    color: white;
+    font-weight: lighter;
+}
+
+.hero-signup :nth-child(3) {
+    font-size: 13px;
+    color: white;
+    font-weight: lighter;
+    font-family: hulu-medium;
+}
+
+.hero-signup i{
+    font-size: 60px;
+    color: white;
+}
+
+.hero-down {
+    width: 100vw;
+    height: calc(100vh - 699px);
+    background-image: linear-gradient(to bottom, var(--hulu-green),black);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hero-down :nth-child(1) {
+    font-family: hulu-medium;
+    color: white;
+}
+
+#hero-down-btn {
+    background-color: transparent;
+    padding: 15px 90px;
+    color: white;
+    font-family: hulu-medium;
+    border: 2px solid white;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+#hero-down-btn:hover {
+    background-color: whitesmoke;
+    color: var(--hulu-black);
+}
+
+
+
+/* ------------------- Second portion tv card --------------- */
+.tv-card {
+    width: 100vw;
+    height: 100vh;
+    background-color: #0B0C0F;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tv-card :nth-child(1) {
+    color: var(--hulu-green);
+    font-family: hulu-medium;
+}
+
+.tv-card :nth-child(2) {
+    color: white;
+    font-family: hulu-medium;
+    font-size: 50px;
+}
+
+.tv-card :nth-child(3) {
+    color: white;
+    font-family: hulu-medium;
+}
+
+.shows-card {
+    display: flex;
+}
+
+.cards {
+    width: 320px;
+    height: 500px;
+    margin-right: 30px;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    transition: 0.3s ease-in;
+}
+
+.cards:hover {
+    border: 3px solid white;
+}
+
+
+/* --------- Card for Shows and It's Under content ----------*/
+
+#card1 p {
+    color: white;
+    font-size: 16px;
+    position: relative;
+    top: 20px;
+    left: 28px;
+}
+
+#card1 h4 {
+    color: white;
+    font-size: 25px;
+    margin-top: 15px;
+    position: relative;
+    top: 20px;
+    left: 28px;
+}
+
+#card2 p {
+    color: white;
+    font-size: 16px;
+    position: relative;
+    top: 20px;
+    left: 28px;
+}
+
+#card2 h4 {
+    color: white;
+    font-size: 25px;
+    margin-top: 15px;
+    position: relative;
+    top: 20px;
+    left: 28px;
+}
+#card3 p {
+    color: white;
+    font-size: 16px;
+    position: relative;
+    top: 20px;
+    left: 28px;
+}
+
+#card3 h4 {
+    color: white;
+    font-size: 25px;
+    margin-top: 15px;
+    position: relative;
+    top: 20px;
+    left: 28px;
+}
+
+#card4 p {
+    color: white;
+    font-size: 17px;
+    position: relative;
+    top: 20px;
+    left: 28px;
+}
+
+#card4 h4 {
+    color: white;
+    font-size: 25px;
+    margin-top: 15px;
+    position: relative;
+    top: 20px;
+    left: 28px;
+}
+
+/* ------------- Down card Portion text only Section -------*/
+
+.down-card-por {
+    width: 100vw;
+    height: 500px;
+    background-color: var(--hulu-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.down-card-por-content {
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.down-card-por-content :nth-child(1) {
+    color: var(--hulu-green);
+    font-family: hulu-medium;
+}
+
+
+.down-card-por-content :nth-child(2) {
+    color: white;
+    font-family: hulu-medium;
+    font-size: 50px;
+}
+
+.down-card-por-content :nth-child(3) {
+    text-align: center;
+    color: white;
+    font-family: hulu-medium;
+    font-size: 19px;
+    font-weight: lighter;
+}
+
+.down-card-por-content :nth-child(5) {
+    color: white;
+    font-size: 11px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#down-card-por-btn {
+    background-color:var(--hulu-green);
+    padding: 15px 60px;
+    color: var(--hulu-black);
+    font-family: hulu-medium;
+    font-weight: 550;
+    border: none;
+    border-radius: 4px;
+}
+
+
+.down-card-por-content :nth-child(6) {
+    color: white;
+    font-family: hulu-medium;
+}
+
+
+/* --------------- live sports tv style section -------------- */
+
+.live-sports {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://cnbl-cdn.bamgrid.com/assets/3ab6ce86baaf4225b072c58fa9497ec949c0c9e284b3958ecda1429b7f3744f9/original);
+    background-size: cover;
+    display: flex;
+
+}
+
+.lives-sports-left {
+    height: 100vh;
+    width: 50%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ls-left-content {
+    height: 70%;
+    width: 80%;
+    margin: auto;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.ls-left-content > * {
+    margin-bottom: 40px;
+    color: white;
+    font-family: hulu-medium;
+}
+
+.ls-left-content-links {
+    display: flex;
+    gap: 40px;
+    font-family: hulu-font;
+    text-decoration: underline;
+}
+
+
+.ls-left-miniicon {
+    display: flex;
+    gap: 20px;
+}
+
+.ls-left-content h2 {
+    font-size: 50px;
+}
+
+.ls-left-content p {
+    font-size: 18px;
+    padding-left: 150px;
+}
+
+.miniicon-box {
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: center center;
+}
+
+
+/* ------------------- Dangerous Design Roller Section -------------*/
+
+.roller {
+    width: 100vw;
+    height: 150vh;
+    background-color: #0B0C0F;
+}
+
+.roller-main {
+    height: 100%;
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.roller-main-heading {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: hulu-medium, sans-serif;
+    color: white;
+    border-bottom: 0.7px solid gray;
+}
+
+.roller-main-heading h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.roller-main-heading p {
+    text-align: center;
+    font-size: 17px;
+}
+
+.roller-main-btn {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    border-bottom: 0.7px solid gray;
+    position: sticky;
+    align-self: flex-start;
+    top: 0.1px;
+    background-color: #0B0C0F;
+}
+
+.rm-btn1 {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+}
+
+.por1 {
+    height: 100%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: hulu-medium, sans-serif;
+    gap: 7px;
+}
+
+.por1 img {
+    height: 40px;
+    width: 40px;
+    margin-right: 9%;
+}
+
+.por2 {
+    height: 100%;
+    width: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -------------- Custom Toggle Button Design --------------*/
+
+ /* The switch - the box around the slider */
+ .switch {
+    position: relative;
+    display: inline-block;
+    width: 65px;
+    height: 39px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 28px;
+    width: 28px;
+    left: 6px;
+    bottom: 6px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color:var(--hulu-green);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px var(--hulu-green);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(28px);
+    -ms-transform: translateX(28px);
+    transform: translateX(28px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 36px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  } 
+
+/* -------------- Custom Toggle Button Design END--------------*/
+
+
+.por3 {
+    height: 100%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: hulu-medium, sans-serif;
+    gap: 7px;
+}
+
+.por3 img {
+    margin-right: 9%;
+}
+
+.rm-btn2 {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.plan1-heading {
+    font-family: hulu-font, sans-serif;
+}
+
+#plan1-button {
+    width: 100%;
+    height: 20%;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding: 5% 10%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: hulu-font, sans-serif;
+    font-size: 14px;
+}
+
+.rm-btn3 {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: hulu-font, sans-serif;
+}
+
+#plan2-button {
+    width: 100%;
+    height: 21%;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding: 5% 10%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: hulu-font, sans-serif;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.most-popular-tag2 {
+    width: 100%;
+    height: 10%;
+}
+
+#text-white {
+    color: white;
+}
+
+.most-popular-tag {
+    width: 35%;
+    height: 30px;
+    padding: 2px 7px;
+    border-radius: 30px;
+    background-color: var(--hulu-green);
+    font-size: 11px;
+    font-family: hulu-font, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --------------- Plan lists ---------------------------*/
+
+.roller-main-list {
+    height: 100%;
+    width: 100%;
+}
+
+.plans-lists {
+    border-bottom: 0.7px solid gray;
+    display: flex;
+    justify-content: space-between;
+    height: 9%;
+    width: 100%;
+    font-family: hulu-font, sans-serif;
+}
+
+.plan-names {
+    color: white;
+}
+
+.plan-names, .tick1, .tick2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.tick2 {
+    margin-right: 12%
+}
+.tick1 i, .tick2 i {
+    font-size: 23px;
+    color: #1CE783;
+}
+
+
+/* --------------- Design of Footer ------------------ */
+
+footer {
+    width: 100vw;
+    height: 60vh;
+    background-color: #E8EAED;
+}
+
+.footer-out {
+    height: 60vh;
+    width: 80%;
+    margin: auto;
+}
+
+.footer-main-heading {
+    width: 98%;
+    height: 17%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 14px;
+    font-family: hulu-medium;
+}
+
+.footer-main-heading2 {
+    display: flex;
+    height: 100%;
+    width: 25%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    font-family: hulu-font, sans-serif;
+    align-items: start;
+    height: 60%;
+    border-bottom: 1px solid grey;
+}
+
+.ftlinks li {
+    text-decoration: none;
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: rgb(113, 109, 109);
+}
+
+.footer-icons {
+    width: 15%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer-icons i {
+    font-size: 20px;
+    color: gray;
+    cursor: pointer;
+}
+
+.footer-mini-links {
+    width: 100%;
+    cursor: pointer;
+}
+
+.footer-mini-links ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    list-style: none;
+    color: rgb(113, 109, 109);
+    font-size: 12px;
+    font-family: hulu-font, sans-serif;
+    cursor: pointer;
+}
+
+.ftlinks li {
+    cursor: pointer;
+}
