@@ -1,0 +1,330 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+@font-face {
+    font-family: netflix-sans-light;
+    src: url(Resources/fonts/NetflixSans-Light.otf);
+
+    font-family: netflix-sans-bold;
+    src: url(Resources/fonts/NetflixSans-Bold.otf);
+
+    font-family: netflix-sans-medium;
+    src: url(Resources/fonts/NetflixSans-Medium.otf);
+}
+
+:root {
+    --red :rgb(193,17,25);
+}
+
+body {
+    background-color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: netflix-sans-medium;
+    overflow-x: hidden;
+}
+
+
+header {
+    height: 700px;
+    width: 100vw;
+    background-image: url(Resources/background.jpg);
+    filter:brightness(70%);
+    background-size:auto;
+    background-position: center center;
+    border-bottom: 8px solid rgb(63, 62, 62);
+    position: relative;
+}
+
+.test {
+    height: 720px;
+    width: 100vw;
+    background-color:rgba(0, 0, 0, 999);
+    filter: opacity(70%);
+    position: absolute;
+}
+
+
+
+.navlogo {
+    height: 92px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 80px 1px;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+    width: 148px;
+    position: relative;
+    z-index: 100;
+
+}
+.nav-btn select {
+   margin-right: 25px;
+   padding: 5px;
+   position: relative;
+   z-index: 100;
+}
+
+.nav-btn a{
+   background-color: var(--red);
+   font-family: netflix-sans-medium;
+   padding: 8px 12px;
+   color: white;
+   text-decoration: none;
+   font-weight: 200;
+   border-radius: 9px;
+   position: relative;
+   z-index: 100;
+}
+
+/* --------------- Hero texts -----------*/
+
+.heading {
+    width: 100vw;
+    height: calc(700px-92px);
+    margin: 10% 10% 10% 23%;
+    display: flex;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.heading h2 {
+    font-family: netflix-sans-medium;
+    font-weight: 800;
+    color: white;
+    font-size: 50px;
+}
+
+.heading h2, h3, h4, .mail {
+    margin-top: 25px;
+}
+
+.heading h3 {
+    font-weight: 100;
+    color: rgb(194, 185, 185);
+    font-size: 25px;
+    margin-left: 11%;
+}
+
+.heading h4 {
+    font-weight: 50;
+    color: rgb(194, 185, 185);
+    font-size: 20px;
+    margin-left: 11%;
+}
+
+button {
+    background-color: var(--red);
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-right: 48%;
+}
+
+.mail {
+    width: 100vw;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mail input {
+    width: 20%;
+    height: 60%;
+    border-radius: 5px;
+    margin-right: 7px;
+    font-size: 15px;
+    padding: 10px;
+    background-color: black;
+    filter: opacity(70%);
+    color: white;
+}
+
+
+/* -------------- tv section --------------- */
+
+.tv-view {
+    width: 100vw;
+    height: 700px;
+    display: flex;
+    border-bottom:  8px solid rgb(63, 62, 62);
+}
+
+.tv-left {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    gap: 10px;
+}
+
+.tv-left :nth-child(1) {
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.tv-left :nth-child(2){
+    font-size: 24px;
+    font-family: netflix-sans-medium;
+    font-weight: lighter;
+    text-align: center;
+    margin-left: 22%;
+}
+
+.tv-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.tv-right img {
+    position: relative;
+    z-index: 10;
+}
+
+.tv-right video {
+    position: absolute;
+
+}
+
+
+
+/* Second section custom design */
+#tv-view {
+    width: 100vw;
+    height: 700px;
+    display: flex;
+    border-bottom:  8px solid rgb(63, 62, 62);
+}
+
+#tv-left {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    gap: 10px;
+}
+
+#tv-left :nth-child(1) {
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+}
+
+#tv-left :nth-child(2){
+    font-size: 24px;
+    font-family: netflix-sans-medium;
+    font-weight: lighter;
+    text-align: center;
+    
+}
+
+#tv-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 60px;
+}
+
+#tv-right img {
+    position: relative;
+    z-index: 10;
+}
+
+#tv-right video {
+    position: absolute;
+
+}
+
+
+/*--------- faq section ---------- */
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    color: white;
+    justify-content: center;
+    border-bottom: 8px solid rgb(63, 62, 62);
+}
+
+.faq-box {
+    height: 15px;
+    width:80%;
+    background-color: #414141;
+    color: white;
+    text-align: center;
+}
+
+
+.faq-box2 {
+    height: 15px;
+    width:80%;
+    background-color: #414141;
+    color: white;
+}
+
+
+.faq h1 {
+    font-size: 46px;
+    margin-bottom: 15px;
+}
+
+.faq-box h3 {
+    color: white;
+    font-size: 26px;
+}
+
+
+
+/* ------------ footer ------- */
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+}
+
+footer ul li {
+    color: white;
+    margin-top: 8px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+.copyright {
+    margin-top: 60px;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-weight: lighter;
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+
+
